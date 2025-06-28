@@ -1,24 +1,295 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 12.5: Taller de Ergonomía</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 12.5: Taller de Ergonomía</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes practiquen intensivamente el modelado de formas orgánicas complejas usando superficies y lofts.</li>
+                                        <li>Que apliquen los conocimientos de su brief ergonómico para crear un objeto técnico.</li>
+                                        <li>Que refinen su habilidad para consultar al AI Advisor sobre herramientas avanzadas de surfacing.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un modelo 3D en Onshape que presenta una superficie principal ergonómica y compleja, creada mediante la herramienta 'Loft', demostrando el dominio técnico de la herramienta (aunque no esté 100% completo).</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de Onshape para cada alumno.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que todos los sistemas (Internet, Onshape, Xolo) están funcionales.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Repasar el concepto de modelado de superficies y la herramienta 'Loft'. Entender la importancia de la estructura subyacente (planos de referencia, perfiles de croquis) para un buen resultado.</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener un archivo de Onshape listo para demostrar el proceso de Loft: mostrar los planos, los croquis en cada plano y cómo se aplica la herramienta. Idealmente, tener un ejemplo que "falla" (se tuerce) para mostrar cómo la depuración es parte del proceso.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como el taller técnico para materializar el plan ergonómico con herramientas de "escultura digital".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta la sesión como la transición de la teoría ergonómica a la práctica del modelado avanzado.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos. Tienen un plan de diseño ergonómico basado en datos. Ahora, el desafío es técnico. Las formas ergonómicas rara vez son simples extrusiones o revoluciones. Son superficies complejas, curvas y orgánicas que fluyen. Hoy, su taller se centra en dominar las herramientas de 'escultura digital' que les permitirán crear esas formas. Es el momento de llevar la teoría de la ergonomía a la práctica del modelado.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo: 'Hola Xolo, listo para la Misión 12.5', seguido de su nombre, perfil y gustos. Esperen su confirmación para comenzar este taller avanzado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+                <p>Presentar el modelado de superficies como una técnica profesional y el desafío de dominar la herramienta 'Loft'.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentando el Modelado de Superficies y el Desafío ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador explica el concepto de 'surfacing' y enmarca la sesión como una práctica deliberada y desafiante.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Las herramientas que han usado hasta ahora crean sólidos. Pero para formas complejas como la carcasa de un coche o un ratón ergonómico, los diseñadores a menudo trabajan con 'superficies'. Hoy, exploraremos la herramienta 'Loft', que es fundamental para este tipo de modelado. Su desafío es tomar su brief ergonómico y comenzar a modelar. No se espera que lo terminen, sino que luchen con la herramienta. El éxito hoy se mide en su capacidad para experimentar, depurar y refinar una superficie compleja.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de este taller es muy técnico. Al final de la sesión, podrán decir: <strong>'Yo puedo utilizar herramientas de modelado de superficies como 'Loft' para crear formas orgánicas complejas y sé cómo consultar a los asistentes de IA para resolver problemas técnicos de surfacing.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Estrategias de Surfacing) ⏰ 10 minutos</h2>
+                <p>Fase de diálogo con Xolo para entender la estrategia detrás de la herramienta 'Loft' y cómo realizar consultas técnicas más sofisticadas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Estrategia del 'Loft' ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan a Xolo para aprender la estrategia estructural de tres pasos para usar 'Loft'.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Vamos al A.I. GYM. La clave para las superficies es la estructura. Para entenderla, consúltenle a Xolo: <strong>'Xolo, explícame la estrategia de tres pasos para usar la herramienta 'Loft', incluyendo los planos de referencia, los perfiles y la ejecución.'</strong> La respuesta de Xolo es su plan de acción.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diálogo de Consulta Avanzada ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador guía a los estudiantes sobre cómo formular preguntas más específicas y técnicas al Advisor.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Se encontrarán con problemas; es inevitable. Su habilidad para consultar al Advisor debe volverse más sofisticada. En lugar de preguntar 'How to use Loft?', pregunten algo más específico basado en su problema, como: <strong>'What are the best practices for creating a smooth loft between three different sketches?'</strong> o <strong>'How to use guide curves to control a loft in Onshape?'</strong>. Preguntas más precisas conducen a respuestas más útiles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Modelado Ergonómico) ⏰ 22 minutos</h2>
+                <p>Fase de trabajo práctico intensivo para aplicar la estrategia de 'Loft', ejecutar la herramienta y depurar el resultado.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Creación de la Estructura de Croquis y Ejecución del 'Loft' ⏰ 12 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes crean los planos de referencia y los perfiles 2D, e intentan aplicar el 'Loft'.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Basándose en su brief ergonómico, creen los planos de referencia y dibujen los perfiles de sección de su objeto. Luego, usando el ciclo de consulta, intenten aplicar la herramienta 'Loft'. Es probable que el primer intento no sea perfecto. Si su loft se tuerce o no es suave, es el momento de la depuración.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Depuración y Refinamiento ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Los estudiantes inician un ciclo de consulta avanzada y depuración para refinar su superficie.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Si el loft es imperfecto, inicien un ciclo de depuración. Describan su problema al Advisor: **'My loft is twisted and not smooth. What can I do?'**. Basándose en su respuesta técnica (sobre alinear puntos o usar curvas guía), editen sus croquis y refinen la forma del 'Loft' hasta que se asemeje a su intención. El objetivo es lograr la forma clave, aunque no esté completa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final de "Showcase de Formas Orgánicas" donde los estudiantes explican el proceso técnico que siguieron.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador guía una reflexión sobre el mayor desafío y el "truco" que lo resolvió.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen la superficie que lograron crear. Piensen en el proceso técnico: <strong>¿Cuál fue el mayor desafío al usar 'Loft'? ¿Qué 'truco' o consejo del AI Advisor fue el que desbloqueó el problema?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Showcase de Formas Orgánicas) ⏰ 2 minutos</h3>
+                            <p>Los estudiantes comparten sus pantallas y explican su proceso técnico a un compañero.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, es el "Showcase de Formas Orgánicas". Muestren la superficie que crearon. Expliquen a su compañero el mayor desafío que enfrentaron y cómo el consejo del Advisor les ayudó a superarlo. Fíjense en cómo el control de los croquis 2D afecta la superficie 3D final.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador consolida la sesión, enfatizando el valor profesional de dominar el surfacing.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Han dado un gran salto técnico. Han pasado de modelar con primitivas simples a esculpir formas orgánicas complejas. Han experimentado que el control en las etapas iniciales tiene un impacto exponencial en el resultado final. Dominar el modelado de superficies es una de las habilidades más demandadas en el diseño industrial. Están construyendo un portafolio de nivel profesional.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
